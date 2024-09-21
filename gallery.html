@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimiezer School || Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #e6f2ff;
+      color: #333;
+    }
+
+    .back-button {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: #ffffff;
+      background-color: #0077b6; /* Same color as the titles */
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #005f8a; /* Darker shade for hover effect */
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-section img {
+      width: 220px; /* Increased logo size */
+      margin-bottom: 20px;
+    }
+
+    .logo-section h1 {
+      color: #03045e;
+      font-size: 3rem; /* Slightly larger font */
+      margin-bottom: 10px;
+    }
+
+    .logo-section p {
+      font-size: 1.3rem;
+      color: #555;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 25px;
+    }
+
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .grid-item img, .grid-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover img, .grid-item:hover video {
+      transform: scale(1.05);
+    }
+
+    .grid-item h3 {
+      font-size: 1.6rem;
+      color: #0077b6;
+      margin-bottom: 5px;
+    }
+
+    .grid-item p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .grid-item video {
+      background-color: #000;
+    }
+
+    /* Styling for hover effect */
+    .grid-item:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="back-button">
+    <a href="/index.html">&larr; Back</a>
+    <!-- <a href="/index.html"></a> -->
+  </div>
+
+  <div class="gallery-container">
+    <!-- Logo and School Description -->
+    <div class="logo-section">
+      <img src="Primary/img/logo.jpg" alt="Mimiezer School Logo">
+      <h1>Mimiezer School Gallery</h1>
+      <p>Discover the moments that define our school – from exciting events to classroom activities.</p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid-container">
+      <!-- Image Item -->
+      <div class="grid-item">
+        <img src="Gallery/img1.jpg" alt="School Event 1">
+        <img src="Gallery/img3.jpg" alt="School Event 1">
+        <h3>Cartoon Character Day</h3>
+        <p>"This image captures the joy of our students during Cartoon Character Day, showcasing their favorite characters. The vibrant costumes and smiles highlight the fun and creativity of the event."</p>
+      </div>
+
+      <!-- Video Item -->
+      <div class="grid-item">
+        <video controls>
+          <source src="Gallery/video1.1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>End of the session party</h3>
+        <p>"This Video captures the celebration of our students during the End of Session Party, filled with laughter and joy. The festive atmosphere and smiles reflect the hard work and camaraderie of the school year."</p>
+      </div>
+
+      <!-- Image Item -->
+      <div class="grid-item">
+        <img src="Gallery/img.jpg" alt="School Event 2">
+        <h3>Excursion</h3>
+        <p>"This image captures the excitement of our students during the excursion to the first Nigerian storey building in Badagry. Their curiosity and enthusiasm highlight the rich history and cultural significance of this landmark."</p>
+      </div>
+
+      <!-- Image Item -->
+      <div class="grid-item">
+        <img src="Gallery/summer.jpg" alt="School Event 2">
+        <h3>Summer Class</h3>
+        <p>"Here, we see our students immersed in their Summer Class, actively exploring new subjects and skills. Their enthusiasm and focus truly embody the joy of learning in a fun and supportive environment."</p>
+      </div>
+
+      <!-- Video Item -->
+      <div class="grid-item">
+        <video controls>
+          <source src="Gallery/vid3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Resumption day</h3>
+        <p>"Our students are filled with enthusiasm on Resumption Day as they reunite with friends and teachers. The vibrant atmosphere reflects their eagerness to begin a new school year full of learning and adventure."</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
