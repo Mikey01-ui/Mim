@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mimiezer School || Home</title>
   <style>
-   body {
+    body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -24,7 +24,10 @@
 
     img {
       width: 150px;
-      margin: 10px auto;
+      margin: 10
+html
+Copy code
+      px auto;
       display: block;
     }
 
@@ -48,6 +51,7 @@
       transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out, transform 0.4s ease-out;
       animation: pulse 1.5s infinite;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      text-decoration: none; /* Make links look like buttons */
     }
 
     .button-arounder:hover,
@@ -64,10 +68,6 @@
       50% {
         transform: scale(1.05);
       }
-    }
-
-    button {
-      width: 220px;
     }
 
     .loader {
@@ -117,14 +117,14 @@
   <div class="loader" id="loader">
     <span class="loader">Mimiezer</span>
   </div>
-  <div class="content" id="content">
+  <div class="content" id="content" style="display: none;">
     <div class="container">
       <img src="Gallery/logo2.png" alt="Mimiezer School Logo">
       <div class="buttons-container">
         <a href="Primary/index2.html" class="button-arounder">Explore Primary Section</a>
         <h1>OR</h1>
         <a href="Secondary/index.html" class="button-arounder">Discover Secondary Section</a>
-        <a href="gallery.html" class="button-arounder">View Gallery</a> <!-- New Gallery Button -->
+        <a href="gallery.html" class="button-arounder">View Gallery</a>
         <br><br>
         <a href="http://mimiezer.schoolone.com.ng/portal/login" class="button-arounder">Check Result</a>
       </div>
@@ -146,7 +146,7 @@
       content.style.display = 'block';
     }
 
-    // Show loader for 5 seconds before hiding and displaying content
+    // Show loader for 1.5 seconds before hiding and displaying content
     showLoader();
     setTimeout(function() {
       hideLoader();
