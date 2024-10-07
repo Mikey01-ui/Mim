@@ -337,6 +337,47 @@
         });</script>
 
     <script src="js/main.js"></script>
+
+        <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable certain key combinations like Ctrl+U (view source), Ctrl+Shift+I (dev tools), etc.
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();  // Disable Ctrl+U
+            }
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+                e.preventDefault();  // Disable Ctrl+Shift+I
+            }
+            if (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) {
+                e.preventDefault();  // Disable Ctrl+Shift+C (inspect element)
+            }
+            if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) {
+                e.preventDefault();  // Disable Ctrl+Shift+J (open console)
+            }
+            if (e.key === 'F12') {
+                e.preventDefault();  // Disable F12 (open dev tools)
+            }
+        });
+
+        // Prevent screenshot using PrtScn and related key events
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'PrintScreen') {
+                e.preventDefault();  // Disable PrintScreen
+                alert("Screenshot is disabled.");
+            }
+        });
+
+        // Optional: Prevent copying text
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();  // Disable copying
+            alert("Copying is disabled.");
+        });
+    </script>
+
 </body>
 
 </html>
